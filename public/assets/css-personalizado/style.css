@@ -1,0 +1,313 @@
+.clear {
+ clear: both;
+
+}
+
+
+body {
+ background-color: #f4fbfd;
+}
+
+.login {
+ border-radius: 25px;
+ padding: 75px;
+ border: 5px solid green;
+ margin: 100px auto;
+ width: 450px;
+}
+
+#inputs {
+ padding: 10px 20px;
+}
+
+.h1-login {
+
+ position: relative;
+
+ top: -30px;
+}
+
+.esqueceu-senha {
+
+ position: relative;
+
+ top: 80px;
+
+ left: 194px;
+}
+
+.cadastre-se {
+
+ position: relative;
+
+ top: 54px;
+
+ right: 60px;
+}
+
+.footer {
+ width: 100%;
+ background-color: green !important;
+ padding: 15px;
+ position: relative;
+ top: 24px;
+}
+
+.p-copy {
+
+ color: whitesmoke;
+
+ font-weight: bold;
+
+ text-align: center;
+}
+
+#img-logo {
+
+ width: 300px;
+
+ position: relative;
+
+ top: 43px;
+}
+
+.rounded-circle {
+ border-radius: 20% !important;
+}
+
+body {
+ background-color: #f4fbfd;
+}
+
+.login {
+ border-radius: 60px;
+ padding: 75px;
+ border: 5px solid green;
+ margin: 100px auto;
+ width: 450px;
+}
+
+#inputs {
+ padding: 10px 20px;
+}
+
+.h1-login {
+
+ position: relative;
+
+ top: -30px;
+}
+
+
+.footer {
+ width: 100%;
+ background-color: #198754 !important;
+ padding: 15px;
+ position: relative;
+ top: 24px;
+}
+
+
+#img-logo {
+
+ width: 300px;
+
+ position: relative;
+
+ top: 43px;
+
+}
+
+.rounded-circle {
+ border-radius: 20% !important;
+}
+
+#title-form {
+
+ color: #198754;
+
+ font-size: 2.5em;
+
+ font-family: fantasy;
+
+}
+
+#form-login {
+
+ width: 600px;
+
+ margin: 100px auto;
+
+ border: 5px solid green;
+
+ padding: 100px;
+
+ border-radius: 50px;
+}
+
+#label-create-login {
+ color: green;
+ font-weight: bolder;
+}
+
+#title-form-1{
+
+ position: relative;
+
+ top: -44px;
+
+ color: green;
+
+ font-weight: bold;
+}
+
+.img-pag-home {
+
+ width: 126px;
+
+ height: 82px;
+
+ /* margin: 1px; */
+}
+.header {
+ background: chocolate;
+ height: 83px;
+ width: 100%;
+ margin-top: -27px;
+}
+
+.header-1 {
+
+ /* float: right; */
+
+ /* position: relative; */
+
+ list-style: none;
+
+ padding: 27px;
+}
+
+ul.header-1 li {
+ display: inline;
+ padding: 20px;
+}
+
+ul.header-1 li a  {
+ color: white;
+ font-weight: bold;
+ font-style: unset;
+ font-family: sans-serif;
+ text-decoration: none;
+}
+
+.nav-header {
+
+ margin-top: 18px;
+
+ text-align: center;
+}
+
+.a-hover:hover {
+
+ color: black;
+ text-transform: uppercase;
+
+}
+
+.div-principal
+{height: 700px;}
+
+.backgroud-div-princial-paralax {
+
+ background: url('../../assets/images-home/img-gir1.png') no-repeat !important;
+ background-attachment: fixed;
+
+}
+
+.h1-text-2 {
+ color: white;
+ font-weight: bolder;
+ position: relative;
+ top: 19pc;
+ left: 1pc;
+}
+
+.a-div-principal {
+
+ margin-top: 25pc;
+ position: relative;
+ left: -28px;
+}
+
+.a-text- {
+
+ background: white;
+
+ margin: 1px;
+
+ padding: 10px 10px;
+
+ text-decoration: none;
+
+ color: black;
+
+ font-weight: bolder;
+
+ border-radius: 10px;
+}
+.a-text-:hover {
+ text-transform: uppercase;
+ color: black;
+ background: orangered;
+}
+.sobre {
+
+ padding: 40px;
+}
+
+.texto
+{
+
+ padding: 20px;
+ color: #0a58ca;
+ font-weight: bold;
+}
+
+.sobre-h1 {
+
+ color: blue;
+}
+
+#div-articles {
+ margin-left: 50px
+}
+
+.padding-articles{
+ padding: 19px;
+}
+
+.h3-icon {
+
+ text-align: center;
+
+ font-size: 5pc;
+}
+
+.a-img {
+ width: 100%;
+}
+
+.a-img:hover {
+
+ transform: scale(1.3);
+
+}
+
+.form-builder-fiv {
+ width: 600px;
+}
+
+#table_id {
+ border: 1px solid chocolate;
+ border-radius: 10px;
+}
