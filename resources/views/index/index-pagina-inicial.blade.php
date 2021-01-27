@@ -29,10 +29,10 @@
                     <a class="a-hover" href="#"> <i class="fas fa-egg"></i> Cobrição FIV </a>
                 </li>
                 <li class="col-2">
-                    <a class="a-hover" href="#"> Sobre</a>
+                    <a class="a-hover" href="#"> <i class="fas fa-sitemap"></i> Inovulação </a>
                 </li>
                 <li class="col-2">
-                    <a class="a-hover" href="#"> Sobre</a>
+                    <a class="a-hover" href="#"> <i class="fas fa-hat-cowboy-side"></i> Nascimento </a>
                 </li>
                 <li class="col-2">
                     <a class="a-hover" href="#Div-principal"> <i class="fas fa-align-justify"></i> Sobre</a>
@@ -58,52 +58,60 @@
 
     <section class="sobre" id="Div-principal">
         <div class="container">
-            <h1 class="sobre-h1 text-center"> dapodkaposdkaplmxaçlsxsa </h1>
+            <h1 class="sobre-h1 text-center"> Comunicação de cobrições </h1>
         </div>
         <div class="texto">
-            <p class="text-center">dapsodmapsodkpasokdpsaox,ásx,aósx,aposxa <br>
-                ald,ald,las,dçal,dlaçsd,ald,açldçlfmaçs aç</p>
+            <p class="text-center"> Sobre comunicações de cobrições </p>
 
-            <div class="row container" id="div-articles">
+            <article class="row container" id="div-articles">
                 <article class="col padding-articles">
                 <h3 class="h3-icon">
-                <i class="fas fa-home text-center"></i>
+                    <i class="fas fa-egg text-center"></i>
                 </h3>
 
-                    <h4 class="title sobre">
-                        ESCREVER AQUI
+                    <h4 class="title sobre text-center">
+                        Comunicação de cobrição Fiv
                     </h4>
-                    <p class="p-article"> DAMSDKÇAAKNDAL DAMSDKÇAAKNDAL DAMSDKÇAAKNDAL DAMSDKÇAAKNDAL </p>
+                    <p class="p-article text-center"> deverá constar o nome
+                        completo do criador, a data da aquisição ou produção e o número de
+                        embriões, a identificação da matriz doadora e do reprodutor utilizado, com o
+                        nome, número de Controle ou Registro, raça e categoria a que pertencem,
+                        bem como, a identificação da matriz receptora, caso o embrião tenha sido
+                        implantado. </p>
                 </article>
 
                 <article class="col padding-articles">
                     <h3 class="h3-icon">
                         <i class="fas fa-home text-center"></i>
                     </h3>
-                    <h4 class="title sobre">
-                        ESCREVER AQUI
+                    <h4 class="title sobre text-center">
+                        Comunicação de Inovulação
                     </h4>
-                    <p class="p-article"> DAMSDKÇAAKNDAL DAMSDKÇAAKNDAL DAMSDKÇAAKNDAL DAMSDKÇAAKNDAL </p>
+                    <p class="p-article text-center"> O envio das comunicações referidas neste Artigo é de inteira
+                        responsabilidade dos criadores, devendo os formulários conter a assinatura
+                        do médico veterinário responsável pelo procedimento, ou, no caso de envio
+                        eletrônico, ser feito pelo próprio médico veterinário através do sistema
+                        eletrônico da GIROLANDO ou mediante sua aprovação eletrônica com
+                        controle de usuário.
+                    </p>
                 </article>
                 <article class="col padding-articles">
                     <h3 class="h3-icon">
-                        <i class="fas fa-home text-center"></i>
+                        <i class="fas fa-birthday-cake text-center"></i>
                     </h3>
-                    <h4 class="title sobre">
-                        ESCREVER AQUI
+                    <h4 class="title sobre text-center">
+                        Comunicação Nascimento
                     </h4>
-                    <p class="p-article"> DAMSDKÇAAKNDAL DAMSDKÇAAKNDAL DAMSDKÇAAKNDAL DAMSDKÇAAKNDAL </p>
+                    <p class="p-article text-center">  Deverá ser feita a Comunicação de Nascimento ao SRGRG,
+                        informando o número da comunicação de cobrição, bem como conter todos
+                        os dados da doadora e do reprodutor e identificando a matriz receptora;
+                        Deve ser feito o teste de DNA, a partir da idade mínima estipulada
+                        pelo laboratório. Somente após a qualificação de parentesco do pai e da
+                        mãe, apresentada em laudo, é que poderá ser liberado o material de
+                        inspeção para Controle de Genealogia ou Registro Genealógico de
+                        Nascimento do produto.</p>
                 </article>
-                <article class="col padding-articles">
-                    <h3 class="h3-icon">
-                        <i class="fas fa-home text-center"></i>
-                    </h3>
-                    <h4 class="title sobre">
-                        ESCREVER AQUI
-                    </h4>
-                    <p class="p-article"> DAMSDKÇAAKNDAL DAMSDKÇAAKNDAL DAMSDKÇAAKNDAL DAMSDKÇAAKNDAL </p>
-
-            </div>
+            </article>
         </div>
     </section>
 @endsection
