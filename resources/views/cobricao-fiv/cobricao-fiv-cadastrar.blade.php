@@ -8,16 +8,18 @@
         <nav class="nav-header">
             <ul class="col-12 header-1 ">
                 <li class="col-2">
-                    <a class="a-hover" href="#"> <i class="fas fa-home"></i> ínicio </a>
+                    <a class="a-hover" href="{{url('home')}}"> <i class="fas fa-home"></i> ínicio </a>
                 </li>
                 <li class="col-2">
-                    <a class="a-hover" href="#"> <i class="fas fa-egg"></i> Cobrição FIV </a>
+                    <a class="a-hover" href="{{url('view-dados-cobricao-fiv')}}"> <i class="fas fa-egg"></i> Cobrição FIV </a>
                 </li>
                 <li class="col-2">
-                    <a class="a-hover" href="#"> Sobre</a>
+                    <a class="a-hover" data-bs-toggle="modal"
+                       data-bs-target="#modalDemonstration"  href="#"> Sobre</a>
                 </li>
                 <li class="col-2">
-                    <a class="a-hover" href="#"> Sobre</a>
+                    <a class="a-hover" data-bs-toggle="modal"
+                       data-bs-target="#modalDemonstration1"  href="#"> Sobre</a>
                 </li>
                 @if(Auth::check())
                     <li class="col-2">
@@ -39,6 +41,37 @@
             </script>
 
         @endif
+
+        @if(session('Error'))
+
+            <script>
+
+                Swal.fire('Info', '<p class="alert alert-info">{{session('Error')}}</p> ','info');
+
+            </script>
+
+        @endif
+
+
+        @if(session('Success'))
+
+            <script>
+
+                Swal.fire('Info', '<p class="alert alert-info">{{session('Success')}}</p> ','info');
+
+            </script>
+
+        @endif
+
+        @if(session('Success'))
+
+            <script>
+
+                Swal.fire('Info', '<p class="alert alert-success">{{session('Success')}}</p> ','success');
+                setTimeout(function(){ window.location.href= 'view-dados-cobricao-fiv';}, 2000);
+
+            </script>
+        @endif
         <form id="form_cobricao_fiv" class="form form-group" action="{{url('/cadastrar-cobricao-fiv')}}" method="POST">
             <input type="hidden" name="_token" value="{{csrf_token()}}">
             <div class="form-group row">
@@ -49,7 +82,7 @@
                     <div class="input-group">
                         <div class="input-group-prepend">
                         </div>
-                        <input id="text" name="name_criador" type="text" class="form-control" value="{{old('name_criador')}}"required>
+                        <input id="text" name="name_criador" type="text" class="form-control" value="{{Auth::user()->name}}"required>
                     </div>
                 </div>
             </div>
@@ -190,6 +223,42 @@
                 <button class="btn btn-info my-4" type="submit">Salvar</button>
             </div>
         </form>
+
+        <!-- Modal -->
+        <div class="modal fade" id="modalDemonstration" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Aviso</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Aguarde implementação...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="modalDemonstration1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Aviso</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Aguarde implementação...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 @endsection

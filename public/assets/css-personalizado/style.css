@@ -311,3 +311,23 @@ ul.header-1 li a  {
  border: 1px solid chocolate;
  border-radius: 10px;
 }
+
+div#addCobricao {
+
+ position: relative;
+
+ right: 500px;
+}
+
+.a-cadastrar-cobricao {
+
+ text-decoration: none;
+
+ color: darkred;
+
+}
+
+.a-cadastrar-cobricao:hover {
+
+ color: darkred;
+}

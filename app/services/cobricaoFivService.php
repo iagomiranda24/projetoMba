@@ -5,6 +5,7 @@ namespace App\services;
 
 use App\repositories\cobricaoFivRepository;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Session;
@@ -29,7 +30,20 @@ class cobricaoFivService
 
         $colecaoCobricaoFiv = $this->cobricaoFivRepository->dadosCobricaoFivModel()->get();
 
-        return view('cobricao-fiv.exibir-dados-cobricao-fiv', compact('colecaoCobricaoFiv'));
+        $nameCriador = DB::table('cobricaofivmodel')->where('name_criador', '=', Auth::user()->name)->get();
+
+        if($nameCriador != null) {
+
+            return view('cobricao-fiv.exibir-dados-cobricao-fiv', compact('colecaoCobricaoFiv', 'nameCriador'));
+
+        } else {
+
+            $errorUser = 'Você não tem usuário cadastrado';
+
+            return redirect('view-dados-cobricao-fiv')
+                ->with('errorUser', $errorUser);
+
+        }
 
     }
 
@@ -78,8 +92,24 @@ class cobricaoFivService
 
         $criarCobricaoFiv = $this->cobricaoFivRepository->dadosCobricaoFivModel()->insert($dados);
 
-        dd($criarCobricaoFiv);
+        if($criarCobricaoFiv) {
+
+            $Success = 'Cadastro efetuado com sucesso';
+
+            return redirect('cadastrar-cobricao-fiv')
+                ->with('Success', $Success);
+
+        } else {
+
+            $Error = 'Cadastro não efetuado';
+
+            return redirect('cadastrar-cobricao-fiv')
+                ->with('Error', $Error);
+
+        }
 
     }
+
+
 
 }

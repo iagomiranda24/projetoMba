@@ -23,4 +23,8 @@ Route::group(['middleware' => ['auth']], function () {
 
     Route::get('view-dados-cobricao-fiv', 'cobricaoFiv\cobricaoFivController@mostrarFuncaoDadosController');
 
+    Route::post('/editar-cobricao-fiv/{id}', 'cobricaoFiv\cobricaoFivController@editarDadosCobricaoFiv');
+
+    Route::delete('/deletar-cobricao-fiv/{id}', 'cobricaoFiv\cobricaoFivController@deletar');
+
 });

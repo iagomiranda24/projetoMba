@@ -26,13 +26,15 @@
                 </li>
                 @endif
                 <li class="col-2">
-                    <a class="a-hover" href="#"> <i class="fas fa-egg"></i> Cobrição FIV </a>
+                    <a class="a-hover"  href="{{url('view-dados-cobricao-fiv')}}"> <i class="fas fa-egg"></i> Cobrição FIV </a>
                 </li>
                 <li class="col-2">
-                    <a class="a-hover" href="#"> <i class="fas fa-sitemap"></i> Inovulação </a>
+                    <a class="a-hover" data-bs-toggle="modal"
+                       data-bs-target="#modalDemonstration" href="#"> <i class="fas fa-sitemap"></i> Inovulação </a>
                 </li>
                 <li class="col-2">
-                    <a class="a-hover" href="#"> <i class="fas fa-hat-cowboy-side"></i> Nascimento </a>
+                    <a class="a-hover" href="#" data-bs-toggle="modal"
+                       data-bs-target="#modalDemonstration1"> <i class="fas fa-hat-cowboy-side"></i> Nascimento </a>
                 </li>
                 <li class="col-2">
                     <a class="a-hover" href="#Div-principal"> <i class="fas fa-align-justify"></i> Sobre</a>
@@ -114,4 +116,40 @@
             </article>
         </div>
     </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalDemonstration" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Aviso</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Aguarde implementação...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalDemonstration1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Aviso</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Aguarde implementação...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection
